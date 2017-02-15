@@ -1,0 +1,24 @@
+{
+  "networkMode": "bridge",
+  "family": "louis-play",
+  "volumes": [],
+  "containerDefinitions": [
+    {
+      "memoryReservation": 500,
+      "environment": [],
+      "name": "louis-play-container",
+      "mountPoints": [],
+      "image": "226019795248.dkr.ecr.ap-southeast-2.amazonaws.com/louis-play:%BUILD_NUMBER%",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "protocol": "tcp",
+          "containerPort": 9000,
+          "hostPort": 0
+        }
+      ],
+      "essential": true,
+      "volumesFrom": []
+    }
+  ]
+}
