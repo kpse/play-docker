@@ -5,7 +5,12 @@
   "containerDefinitions": [
     {
       "memoryReservation": 500,
-      "environment": [],
+      "environment": [
+        {
+          "name": "APPLICATION_SECRET",
+          "value": "louis-play-%BUILD_NUMBER%"
+        }
+      ],
       "name": "louis-play-container",
       "mountPoints": [],
       "image": "226019795248.dkr.ecr.ap-southeast-2.amazonaws.com/louis-play:%BUILD_NUMBER%",
