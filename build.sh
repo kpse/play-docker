@@ -13,7 +13,7 @@ function deploy {
 }
 
 function local_dev {
-    activator run
+    bin/activator run
 }
 
 function build_push {
