@@ -29,7 +29,7 @@ function build_push {
 
 function unittest {
     echo params : $@
-    activator test
+    bin/activator test
 }
 function test_script {
     version=${1:-latest}
