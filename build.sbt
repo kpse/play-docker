@@ -18,7 +18,7 @@ lazy val dockerSettings = Seq(
   dockerfile in docker := {
     // any vals to be declared here
     new sbtdocker.mutable.Dockerfile {
-      env("APPLICATION_SECRET", s"123745")
+//      env("APPLICATION_SECRET", s"123745")
     }
   }
 )
